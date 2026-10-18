@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.container {
+  color: aliceblue;
+  margin: 115px;
+}
+.container h2 {
+  font-size: 73px;
+  margin-bottom: 43px;
+}
+.container h2 span {
+  color: green;
+}
+.password {
+  margin-bottom: 43px;
+  width: 400px;
+  height: 60px;
+  /* border: 4px dashed; */
+}
+.password input {
+  outline: none;
+  border: 2px dashed;
+  background: transparent;
+  width: 300px;
+  height: 60px;
+  padding: 22px;
+  font-size: 22px;
+  color: white;
+}
+.password button,
+.btn > button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 87px;
+  height: 60px;
+  background-color: red;
+}
+
+.btn button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 291px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: green;
+}

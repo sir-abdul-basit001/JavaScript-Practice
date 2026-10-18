@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 103px;
+  align-items: center;
+  background-color: rgb(60, 50, 50);
+}
+main div {
+  /* background-color: red; */
+  font-size: 33px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed white;
+  width: 490px;
+  height: 94px;
+}
+
+main input {
+  /* background-color: red; */
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+  width: 100%;
+  height: 100%;
+  font-size: 23px;
+  padding: 23px;
+}
+::placeholder {
+  font-size: 23px;
+}
+button {
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+  font-size: 23px;
+  padding: 23px;
+  background-color: darkgoldenrod;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+}

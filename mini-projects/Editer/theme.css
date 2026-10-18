@@ -1,0 +1,26 @@
+:root {
+  --bgc-primary: rgb(25, 23, 23);
+  --bgc-secondry: rgb(50, 47, 47);
+  --text-primary-color: rgb(216, 205, 205);
+  --text-secondry-color: rgb(255, 250, 250);
+
+  --padding-sm: 0.5rem;
+  --padding-md: 0.8rem;
+  --padding-l: 1rem;
+  --padding-xl: 1.2.5rem;
+  --padding-xxl: 1.5rem;
+
+  --margin-sm: 0.5rem;
+  --margin-md: 0.8rem;
+  --margin-l: 1rem;
+  --margin-xl: 1.2rem;
+  --margin-xxl: 1.5rem;
+
+  --border-radius: 0.5rem;
+  --border: 2px solid;
+
+  --btn-width: 7rem;
+  --btn-height: 2rem;
+
+  --flex-gap: 2rem;
+}

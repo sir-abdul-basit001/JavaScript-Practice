@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --bgc: rgb(43, 43, 43);
+  --text-color: rgb(240, 229, 229);
+  --colom-bgc: rgb(21, 20, 20);
+  --accent-cyan: #5ee7ff;
+  --heading: 29px;
+  --para: 15px;
+  /* button   */
+  --btn-height: 19px;
+  --bgc-btn: rgb(13, 0, 0);
+  --btn-width: 19px;
+  --border-radius: 12px;
+
+  /* delete btn */
+  --dbtn-width: 100px;
+  --dbtn-height: 40px;
+  --dbtn-bgc: rgb(198, 1, 1);
+
+  /* padding: ; */
+  --padding: 12px;
+  --padding-s: 5px;
+  --padding-l: 10px;
+  --padding-xl: 12px;
+  --padding-xxl: 15px;
+
+  /* margin */
+  --margin-xxl: 15px;
+  --margin-s: 5px;
+  --margin-l: 10px;
+  --margin-xl: 12px;
+
+  /* task */
+  --task-bgc: rgb(92, 92, 92);
+
+  /* input  */
+  --inp-width: 280px;
+  --inp-height: 40px;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--bgc);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+}
+nav .left {
+  font-size: var(--heading);
+}
+nav button {
+  margin: var(--margin-l);
+  background-color: var(--bgc-btn);
+  color: var(--text-color);
+  height: 40px;
+  width: 160px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+main .board {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+}
+.board .colom {
+  background-color: var(--colom-bgc);
+  width: 32vw;
+  padding: var(--padding);
+  margin: var(--margin-xxl);
+  border-radius: var(--border-radius);
+}
+
+.board .hover {
+  border-color: var(--accent-cyan);
+  box-shadow:
+    0 0 0 1px var(--accent-cyan),
+    0 0 40px -6px var(--accent-cyan),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+.colom .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.colom .task {
+  background-color: var(--task-bgc);
+  display: flex;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+  padding: var(--padding-xxl);
+  margin: var(--margin-l);
+  cursor: grab;
+}
+.colom .abt-task {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.colom .task h2 {
+  font-size: var(--heading);
+}
+
+.colom .task p {
+  font-size: var(--para);
+}
+.colom .task button,
+.bg .btns #cancel {
+  background-color: var(--dbtn-bgc);
+  width: var(--dbtn-width);
+  height: var(--dbtn-height);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.358);
+  backdrop-filter: blur(15px);
+}
+.active {
+  display: flex;
+}
+.form {
+  position: absolute;
+  top: 40%;
+  left: 39%;
+  border: 2px solid white;
+  background-color: var(--colom-bgc);
+  width: 470px;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+.name input,
+.about #textarea {
+  width: var(--inp-width);
+  height: var(--inp-height);
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  margin: var(--margin-xxl);
+}
+.form button {
+  background-color: rgb(1, 217, 62);
+  width: var(--dbtn-width);
+  height: var(--dbtn-height);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+.about #textarea {
+  height: 70px;
+}
+.bg .btns {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}

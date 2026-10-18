@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+body {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin: 23px;
+}
+.container h1 {
+  font-size: 100px;
+}
+.container #btn {
+  width: 190px;
+  height: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(72, 72, 218);
+}
+.container .input-box {
+  background-color: gray;
+  width: 490px;
+  height: 120px;
+  border-radius: 12px;
+}
+.container textarea {
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+#inp button {
+  background-color: green;
+  position: fixed;
+  top: 302px;
+  left: 412px;
+  width: 86px;
+  height: 36px;
+  border: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}

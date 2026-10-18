@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+.container {
+  margin: 33px;
+  position: relative;
+}
+
+.container button {
+  width: 127px;
+  height: 53px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 9px;
+  background-color: black;
+  color: whitesmoke;
+}
+.toast {
+  position: absolute;
+  right: 23px;
+  bottom: 23px;
+}
+.toast .toast-msg {
+  background-color: wheat;
+  width: 270px;
+  height: 53px;
+  border-radius: 12px;
+  text-align: left;
+}
+.toast .toast-msg p {
+  padding: 12px;
+  font-size: 12px;
+}

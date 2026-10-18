@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanbon board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav-bar">
+        <div class="left"><h2>Kanbon-Board</h2></div>
+        <div class="right"><button id="addbtn">Add New Task</button></div>
+      </nav>
+      <div class="board">
+        <div class="colom">
+          <div class="heading">
+            <div class="todo"><h2>To Do</h2></div>
+            <div class="count">count</div>
+          </div>
+          <!-- <div draggable="true" class="task">
+            <div class="abt-task">
+              <h2>Task no</h2>
+              <p class="dicp">dicription</p>
+            </div>
+            <div>
+              <button id="delete-task">Delete</button>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="colom">
+          <div class="heading">
+            <div class="todo"><h2>In progress</h2></div>
+            <div class="count">count</div>
+          </div>
+        </div>
+
+        <div class="colom">
+          <div class="heading">
+            <div class="todo"><h2>Done</h2></div>
+            <div class="count">count</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="bg">
+      <div class="form">
+        <div class="name">
+          <input type="text" placeholder="Write your Task" />
+        </div>
+        <div class="about">
+          <textarea name="" id="textarea" placeholder="About task"></textarea>
+        </div>
+        <div class="btns">
+          <button id="cancel">Cancel</button>
+          <button id="add">Add</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
